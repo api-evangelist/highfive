@@ -1,8 +1,25 @@
 aid: highfive
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/highfive.png
 name: Highfive
-description: 'Highfive is a company surfaced as a portfolio company of gv, lightspeed-venture-partners
-  and added to the API Evangelist network as a stub for enrichment. Sector: enterprise. This profile is
-  a lead awaiting the enrichment pipeline.'
+description: 'Highfive was a video collaboration and conferencing company (highfive.com)
+  surfaced in the API Evangelist network as a portfolio company of gv and lightspeed-venture-partners.
+  The brand was acquired by and folded into Dialpad: highfive.com now issues a 301 redirect to
+  dialpad.com/highfive, and developer.highfive.com no longer resolves (NXDOMAIN). Highfive exposes no
+  independent developer portal, API documentation, OpenAPI, SDKs, MCP server, or /.well-known/ discovery
+  surface of its own; any current programmatic capability lives under the Dialpad platform. This profile
+  is retained as an enrichment lead; only a domain-security probe of the surviving highfive.com domain
+  yielded real data.'
 url: https://raw.githubusercontent.com/api-evangelist/highfive/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +30,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Enterprise
+- Video Conferencing
+- Collaboration
+- Acquired
+- Dialpad
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +45,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/highfive-domain-security.yml
 - type: Website
   url: http://highfive.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
