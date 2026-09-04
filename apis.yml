@@ -21,6 +21,8 @@ accessModel:
   source: []
   generated: '2026-07-22'
   method: derived
+  source:
+  - {url: 'http://highfive.com', status: 301, note: 'declared website redirects to https://www.dialpad.com/highfive/ — a different registrable domain (highfive.com -> dialpad.com), possible rename or acquisition (probed 2026-09-03, roadmap#169)'}
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/highfive.png
 name: Highfive
 description: 'Highfive was a video collaboration and conferencing company (highfive.com)
